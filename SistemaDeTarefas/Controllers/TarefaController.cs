@@ -16,7 +16,7 @@ namespace SistemaDeTarefas.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<TarefaModel>>> BuscarTodosUsuarios()
+        public async Task<ActionResult<List<TarefaModel>>> BuscarTodasTarefas()
         {
             List<TarefaModel> tarefas = await _tarefaRepositorio.BuscarTodasTarefas();
             return Ok(tarefas);
